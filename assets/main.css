@@ -1,0 +1,102 @@
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body * { 
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #23f;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+h1::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #23f;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+ul {
+  margin-top: 80px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+li {
+  border-radius: 25px;
+  box-shadow: 20px 20px 50px #3333, -20px -20px 50px #3333;
+  padding: 20px;
+  transition: 0.3s;
+  position: relative;
+  top: 0;
+  animation: 3s ease 0.3s infinite animate;
+}
+li:nth-child(2) {
+  animation: 3s ease 0.5s infinite animate;
+}
+li:nth-child(2) {
+  animation: 3s ease 1s infinite animate;
+}
+
+li:hover {
+  background-color: #2222;
+}
+
+li a {
+  display: inline-block;
+  height: 100%;
+}
+
+li a .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+@keyframes animate {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+    
+  }
+  100% {
+    top: 0;
+  }
+}
