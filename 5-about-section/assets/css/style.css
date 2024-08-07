@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.text-content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.text-content h2::after {
+  content: "";
+  position: absolute;
+  background-color: #fdc236;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+}
+
+.text-content h2 span {
+  color: #fdc236;
+}
+
+.text-content h3 {
+  font-size: 28.5px;
+  color: #646464;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #878787;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.text-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text-content ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.text-content ul li i {
+  color: #fdc236;
+  margin-right: 10px;
+}
+
+.text-content a {
+  background-color: #fdc236;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.image-content {
+  flex-basis: 50%;
+}
+
+.image-content img {
+  max-width: 100%;
+  box-shadow: 5px 5px #fdc236;
+}
